@@ -44,7 +44,7 @@ public class BmiCalculatorServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setHeader("Access-Control-Allow-Origin","*");
-		response.setHeader("Access-Control-Allow-Methods","GET");
+		response.setHeader("Access-Control-Allow-Methods","POST");
 		response.setHeader("Access-Control-Allow-Headers","Content-Type");
 		String name=request.getParameter("name");
 		double weight=Double.parseDouble(request.getParameter("weight"));
